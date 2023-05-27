@@ -1,0 +1,141 @@
+@import "reset";
+@import "variable";
+@import "function";
+
+body {
+  background-color: $bgc;
+  display: grid;
+  place-content: center;
+}
+
+.hero-txt-person,
+.hero-txt-person--left,
+.social {
+  display: flex;
+}
+
+.hero {
+  width: rem(327);
+  border-radius: rem(10);
+  background-color: #fff;
+  position: relative;
+
+  &-img {
+    width: rem(327);
+    height: rem(200);
+    object-fit: cover;
+    object-position: center rem(-16);
+    border-radius: rem(10) rem(10) 0 0;
+  }
+
+  &-txt {
+    width: rem(263);
+    margin: rem(36) auto rem(20);
+
+    &__heading {
+      letter-spacing: 0.2px;
+      color: $gray;
+      font-size: rem(16);
+      margin-bottom: rem(12);
+    }
+
+    &__para {
+      font-size: rem(13);
+      line-height: 1.54;
+      letter-spacing: 0.122px;
+      color: $lightGray;
+      margin-bottom: rem(32);
+    }
+
+    &-person {
+      align-items: center;
+      justify-content: space-between;
+
+      &--left {
+        align-items: center;
+        gap: rem(16);
+      }
+
+      &--info {
+        & h3,
+        p {
+          font-size: rem(13);
+          line-height: 1.54;
+          letter-spacing: 0.122px;
+          color: $gray;
+        }
+
+        & p {
+          color: $veryLightGray;
+        }
+      }
+
+      &__img {
+        width: rem(40);
+        height: rem(40);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.hero-share--active {
+  width: 100%;
+  height: rem(64);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  padding: rem(40) rem(32);
+  background-color: $gray;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+  display: none;
+
+  .social {
+    gap: rem(16);
+
+    & ion-icon {
+      font-size: rem(20);
+      color: #fff;
+    }
+  }
+
+  & p {
+    text-transform: uppercase;
+    font-size: rem(13);
+    letter-spacing: 5px;
+    line-height: 1.54;
+    font-weight: 500;
+    color: $veryLightGray;
+  }
+}
+
+.share-btn__class,
+.share-btn--active__class {
+  width: rem(32);
+  height: rem(32);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.share-btn__class {
+  background-color: $iconBGC;
+  & svg {
+    fill: #6e8098;
+  }
+}
+
+.share-btn--active__class {
+  background-color: $lightGray;
+  & svg {
+    fill: #fff;
+  }
+}
+.activated {
+  display: flex;
+}
+
+@import "desktop";
