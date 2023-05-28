@@ -18,6 +18,7 @@
       margin: 0;
       width: rem(365);
       flex-grow: 1;
+      position: relative;
 
       &-person {
         position: relative;
@@ -35,10 +36,8 @@
   }
 
   .hero-share--active {
-    top: rem(-80);
-    right: rem(-108.2);
-    left: auto;
-    bottom: auto;
+    top: rem(130);
+    right: rem(-68);
     width: rem(248);
     border-radius: rem(10);
     height: rem(55);

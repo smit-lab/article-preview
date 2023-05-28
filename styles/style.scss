@@ -82,7 +82,7 @@ body {
 .hero-share--active {
   width: 100%;
   height: rem(64);
-  left: 0;
+  right: 0;
   bottom: 0;
   position: absolute;
   padding: rem(40) rem(32);
@@ -123,6 +123,7 @@ body {
 
 .share-btn__class {
   background-color: $iconBGC;
+  position: relative;
   & svg {
     fill: #6e8098;
   }
